@@ -1,5 +1,4 @@
 const { RESTDataSource } = require('apollo-datasource-rest');
-const config = require('./config');
 
 class SoundCloudAPI extends RESTDataSource {
     constructor() {
@@ -8,7 +7,7 @@ class SoundCloudAPI extends RESTDataSource {
     }
 
     async getTracks() {
-        const data = await this.get(`playlists/85980757?client_id=${config.key}`);
+        const data = await this.get(`playlists/85980757?client_id=${process.env.soundcloud_key}`);
         return data.tracks;
     };
 };
