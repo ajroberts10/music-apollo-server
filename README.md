@@ -2,7 +2,7 @@
 
 This is a GraphQL wrapper for the Soundcloud API. It can be used to retrieve playlists and track information for the Music&Colour account.
 
-You can retrieve playlist information using a query like the following:
+You can retrieve playlist information using a query in the following format:
 
 ```
 {
@@ -15,7 +15,7 @@ You can retrieve playlist information using a query like the following:
 }
 ```
 
-This should preduce a response in the following format:
+This should produce a response in the following format:
 
 ```
 {
@@ -40,6 +40,8 @@ This should preduce a response in the following format:
 
 ## To Start
 
-`node index.js`
+Run `node index.js`
+
+Then visit [http://localhost:4000/](http://localhost:4000/)
 
 
