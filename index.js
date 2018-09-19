@@ -6,6 +6,7 @@ const SoundCloudAPI = require('./SoundCloudAPI');
 const server = new ApolloServer({
     typeDefs,
     resolvers,
+    introspection: true,
     dataSources: () => {
         return {
             soundCloudAPI: new SoundCloudAPI()
