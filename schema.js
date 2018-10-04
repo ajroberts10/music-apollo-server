@@ -8,7 +8,13 @@ module.exports = gql`
         stream_url: String!
     }
 
+    type Song {
+        title: String!
+        artist: String!
+    }
+
     type Query {
         tracks: [Track]
+        setlist: [Song]
     }
 `;
